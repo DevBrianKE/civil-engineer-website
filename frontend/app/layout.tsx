@@ -5,6 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+
         {/* NAVBAR */}
         <nav className="bg-gray-900 text-white p-4 flex gap-6">
           <Link href="/">Home</Link>
@@ -15,14 +16,15 @@ export default function RootLayout({ children }) {
         </nav>
 
         {/* PAGE CONTENT */}
-        <main className="p-6">
+        <main className="p-6 min-h-screen">
           {children}
         </main>
 
         {/* FOOTER */}
-        <footer className="bg-gray-100 text-center p-4 mt-10">
+        <footer className="bg-gray-200 text-center p-4">
           <p>© 2026 Civil Engineering Company. All rights reserved.</p>
         </footer>
+
       </body>
     </html>
   );
