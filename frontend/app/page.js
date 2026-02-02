@@ -1,55 +1,65 @@
-export default function HomePage() {
+export default function ServicesPage() {
   return (
-    <section className="bg-slate-50 py-28 px-6">
+    <section className="bg-slate-50 py-24 px-6">
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto">
 
-        {/* LEFT CONTENT */}
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-6">
-            Reliable Civil Engineering & Construction Solutions
+        {/* PAGE TITLE */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Our Engineering Services
           </h1>
 
-          <p className="text-slate-600 text-lg mb-8">
-            We deliver professional engineering services including structural
-            design, project supervision, and infrastructure development with a
-            focus on quality, safety, and sustainability.
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            We provide reliable civil engineering solutions that meet modern
+            construction standards and client expectations.
           </p>
-
-          <div className="flex gap-4">
-
-            <a
-              href="/contact"
-              className="bg-blue-700 text-white px-7 py-3 rounded-md font-medium shadow hover:bg-blue-800 transition"
-            >
-              Get Consultation
-            </a>
-
-            <a
-              href="/projects"
-              className="border border-slate-300 text-slate-800 px-7 py-3 rounded-md font-medium hover:bg-white transition"
-            >
-              View Projects
-            </a>
-
-          </div>
         </div>
 
-        {/* RIGHT CARD */}
-        <div className="bg-white p-10 rounded-xl shadow-md">
+        {/* SERVICES GRID */}
+        <div className="grid md:grid-cols-3 gap-8">
 
-          <h3 className="text-xl font-semibold text-slate-900 mb-4">
-            Why Choose Us?
-          </h3>
+          {/* CARD 1 */}
+          <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
 
-          <ul className="space-y-3 text-slate-600">
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Structural Design
+            </h3>
 
-            <li>✔ Certified Professional Engineers</li>
-            <li>✔ On-time Project Delivery</li>
-            <li>✔ Modern Construction Technology</li>
-            <li>✔ Client-focused Approach</li>
+            <p className="text-slate-600 mb-4">
+              Professional structural analysis and building design that
+              guarantees safety, durability, and compliance with standards.
+            </p>
 
-          </ul>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Construction Supervision
+            </h3>
+
+            <p className="text-slate-600 mb-4">
+              On-site supervision to ensure quality workmanship, safety
+              compliance, and timely project completion.
+            </p>
+
+          </div>
+
+          {/* CARD 3 */}
+          <div className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Project Management
+            </h3>
+
+            <p className="text-slate-600 mb-4">
+              End-to-end project coordination including budgeting, scheduling,
+              procurement, and stakeholder communication.
+            </p>
+
+          </div>
 
         </div>
 
